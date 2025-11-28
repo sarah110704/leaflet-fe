@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Peta Cafe Bandung</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Peta Cafe / Tempat Nongkrong Bandung</h1>
+
+  <div class="container">
+    <div id="map"></div>
+
+    <form id="form-cafe">
+      <h2>Tambah Cafe</h2>
+
+      <label>Nama Cafe</label>
+      <input type="text" id="nama" required>
+
+      <label>Rating (1–5)</label>
+      <select id="rating">
+        <option value="">- pilih -</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+
+      <label>Rekomendasi Menu / Deskripsi</label>
+      <textarea id="deskripsi"></textarea>
+
+      <label>Koordinat</label>
+      <input type="text" id="coord" readonly>
+
+      <button type="submit">Simpan Cafe</button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
